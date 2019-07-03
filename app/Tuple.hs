@@ -1,10 +1,9 @@
 {-# LANGUAGE DeriveFunctor #-}
 module Tuple where
 
+import Control.Monad.Trans.Class (lift)
 import Control.Monad.Trans.Free
 import Control.Monad.Trans.State.Strict hiding (get, put)
-import           Control.Monad             (when)
-import           Control.Monad.Trans.Class (lift)
 
 -- DSL for a tuple of <String, Int>
 
